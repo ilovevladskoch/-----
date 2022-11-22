@@ -1,0 +1,160 @@
+@import 'reset.css';
+@import 'swiper-bundle.min.css';
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
+
+body {
+    font-family: Fira Sans;
+}
+.container {
+    max-width: 1550px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    background: #F2FFDC;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-block {
+    display: flex;
+    align-items: center;
+}
+
+.header-navi-list {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.header-navi-list li:not(:last-child) {
+    margin: 0 10px 0 0;
+}
+
+.header-icon-text-block::before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 40px;
+    margin: 0 10px 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -50px;
+}
+
+.header-icon-text-block.place::before {
+    background-image: url('../img/place.png');
+}
+
+.header-icon-text-block.phone::before {
+    background-image: url('../img/phone.png');
+}
+
+.header-icon-text-block.place {
+    max-width: 210px;
+}
+
+.header-icon-text-block.phone {
+    max-width: 260px;
+}
+
+.header-icon-text-block {
+    position: relative;
+}
+
+/* Text */
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #565656;
+}
+
+.text-2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: #565656;
+}
+
+.text-3 {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 120%;
+    color: #1E1E1E
+}
+
+.text-4 {
+    font-size: 24px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #565656;
+}
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    background: #69B233;
+    padding: 14px 28px;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0px 4px 15px rgba(105, 178, 51, 0.4);
+    border-radius: 5px; 
+}
+
+/* Slider */
+
+.slider-info{
+    position: absolute;
+    z-index: 1;
+    max-width: 750px;
+    height: 380px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 30px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.slider-title, .slider-text {
+    margin: 0 0 30px 0;
+}
+
+.slider-background {
+    position: relative;
+}
+
+/* Text-image block */
+
+.text-img-block {
+    display: flex;
+    margin: 100px auto;
+}
+.text-img-block-info .title, 
+.text-img-block-info .text{
+    margin: 0 30px 30px 0;
+}
+.title {
+}
+.text-3 {
+}
+.text {
+}
+.name {
+}
+.profession {
+}
+.text-img-block-img {
+    flex: 0 0 50%;
+}
